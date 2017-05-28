@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170528 00:59:02.180" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\development\robot-scripts\apptimize\Tests\apptimize.robot" id="s1" name="Apptimize">
+<test id="s1-t1" name="Existing User fills out and submits form">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://apptimize.com/</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170528 00:59:02.297" level="INFO">Opening browser 'chrome' to base url 'https://apptimize.com/'</msg>
+<status status="PASS" endtime="20170528 00:59:07.526" starttime="20170528 00:59:02.297"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>A/B</arg>
+</arguments>
+<status status="PASS" endtime="20170528 00:59:07.553" starttime="20170528 00:59:07.529"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>css=#nav-main &gt; ul.nav.navbar-nav.navbar-right &gt; li:nth-child(1) &gt; a</arg>
+</arguments>
+<msg timestamp="20170528 00:59:07.554" level="INFO">Clicking link 'css=#nav-main &gt; ul.nav.navbar-nav.navbar-right &gt; li:nth-child(1) &gt; a'.</msg>
+<status status="PASS" endtime="20170528 00:59:09.140" starttime="20170528 00:59:07.553"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Start Your 30 Day Trial</arg>
+</arguments>
+<status status="PASS" endtime="20170528 00:59:09.177" starttime="20170528 00:59:09.140"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=fname</arg>
+<arg>Andrew</arg>
+</arguments>
+<msg timestamp="20170528 00:59:09.180" level="INFO">Typing text 'Andrew' into text field 'id=fname'</msg>
+<status status="PASS" endtime="20170528 00:59:09.631" starttime="20170528 00:59:09.179"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lname</arg>
+<arg>Donato</arg>
+</arguments>
+<msg timestamp="20170528 00:59:09.632" level="INFO">Typing text 'Donato' into text field 'id=lname'</msg>
+<status status="PASS" endtime="20170528 00:59:09.775" starttime="20170528 00:59:09.632"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>andrew.donato91@gmail.com</arg>
+</arguments>
+<msg timestamp="20170528 00:59:09.778" level="INFO">Typing text 'andrew.donato91@gmail.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20170528 00:59:09.971" starttime="20170528 00:59:09.778"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=company</arg>
+<arg>Apptimize Candidate</arg>
+</arguments>
+<msg timestamp="20170528 00:59:09.972" level="INFO">Typing text 'Apptimize Candidate' into text field 'id=company'</msg>
+<status status="PASS" endtime="20170528 00:59:10.195" starttime="20170528 00:59:09.972"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=phone</arg>
+<arg>(123) 555-1234</arg>
+</arguments>
+<msg timestamp="20170528 00:59:10.196" level="INFO">Typing text '(123) 555-1234' into text field 'id=phone'</msg>
+<status status="PASS" endtime="20170528 00:59:10.364" starttime="20170528 00:59:10.196"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=jobtitle</arg>
+<arg>QA Engineer</arg>
+</arguments>
+<msg timestamp="20170528 00:59:10.366" level="INFO">Typing text 'QA Engineer' into text field 'id=jobtitle'</msg>
+<status status="PASS" endtime="20170528 00:59:10.528" starttime="20170528 00:59:10.365"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>chocolatemoose1</arg>
+</arguments>
+<msg timestamp="20170528 00:59:10.529" level="INFO">Typing text 'chocolatemoose1' into text field 'id=password'</msg>
+<status status="PASS" endtime="20170528 00:59:10.769" starttime="20170528 00:59:10.529"></status>
+</kw>
+<kw name="Select Radio Button" library="Selenium2Library">
+<doc>Sets selection of radio button group identified by `group_name` to `value`.</doc>
+<arguments>
+<arg>purchased</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20170528 00:59:10.770" level="INFO">Selecting 'No' from radio button 'purchased'.</msg>
+<status status="PASS" endtime="20170528 00:59:10.912" starttime="20170528 00:59:10.770"></status>
+</kw>
+<kw name="Select Checkbox" library="Selenium2Library">
+<doc>Selects checkbox identified by `locator`.</doc>
+<arguments>
+<arg>id=eula</arg>
+</arguments>
+<msg timestamp="20170528 00:59:10.915" level="INFO">Selecting checkbox 'id=eula'.</msg>
+<status status="PASS" endtime="20170528 00:59:11.036" starttime="20170528 00:59:10.914"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=submit</arg>
+</arguments>
+<msg timestamp="20170528 00:59:11.037" level="INFO">Clicking button 'id=submit'.</msg>
+<status status="PASS" endtime="20170528 00:59:11.155" starttime="20170528 00:59:11.037"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170528 00:59:14.365" starttime="20170528 00:59:11.157"></status>
+</kw>
+<doc>This is where a User completes the sign up form for a 30 day trial.</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20170528 00:59:14.365" critical="yes" starttime="20170528 00:59:02.296"></status>
+</test>
+<doc>This signs up for a 30 Day Trial at Apptimize</doc>
+<status status="PASS" endtime="20170528 00:59:14.368" starttime="20170528 00:59:02.183"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Apptimize" pass="1">Apptimize</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
